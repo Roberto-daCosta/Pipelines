@@ -1,0 +1,12 @@
+name: First Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  first_job:
+    runs_on: ubuntu-latest
+    steps:
+      - run: docker pull hello-world:nanoserver-ltsc2025
