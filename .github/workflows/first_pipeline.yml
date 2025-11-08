@@ -7,6 +7,7 @@ on:
 
 jobs:
   first_job:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - run: docker pull hello-world:nanoserver-ltsc2025
+      - name: First step
+        run: docker pull hello-world:nanoserver-ltsc2025
